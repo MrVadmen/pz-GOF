@@ -80,3 +80,38 @@
 [Ти мусиш знати ці патерни проєктування!](https://www.youtube.com/watch?v=Dc6AEjHvpP8)
 
 [abstract-factory-pattern](https://medium.com/@artemkhrenov/abstract-factory-pattern-implementation-in-javascript-7d05c99842b4)
+
+
+Що я зробив:
+Реалізував 6 класичних патернів (по 2 на кожну групу) на TypeScript. Щоб було цікавіше і ближче до нашої спеціальності, я прив'язав усі патерни до тематики військових телекомунікацій та управління:
+
+Factory Method — для вибору типу доставки (бронеавтомобіль/дрон).
+
+Singleton — для створення єдиного з'єднання з Командним Пунктом.
+
+Adapter — для підключення старої аналогової рації до цифрової мережі.
+
+Facade — для розгортання станції зв'язку однією командою (генератор + антена + криптомодуль).
+
+Strategy — для перемикання маршрутизації (швидкий канал або захищений VPN).
+
+Observer — для миттєвої розсилки наказів зі штабу до підрозділів.
+
+Команди для перевірки (щоб вам було зручно запустити):
+
+Щоб запустити і перевірити одразу всі 6 патернів, введіть у терміналі:
+npx ts-node examples/run-all.ts
+
+Якщо хочете запустити їх по черзі, ось команди для кожного окремо:
+
+Породжувальні:
+npx ts-node src/creational/factory-method/index.ts
+npx ts-node src/creational/singleton/index.ts
+
+Структурні:
+npx ts-node src/structural/adapter/index.ts
+npx ts-node src/structural/facade/index.ts
+
+Поведінкові:
+npx ts-node src/behavioral/strategy/index.ts
+npx ts-node src/behavioral/observer/index.ts
